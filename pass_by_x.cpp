@@ -1,3 +1,10 @@
+/* Passing by value */
+void func(y) {
+    return y;
+}
+
+int x = func(2);
+
 /* Passing by address */
 void func(*y) {
     *y = 1;
