@@ -1,3 +1,23 @@
+# How to run C++ in VSCode on MacOS
+1. Check if you have compailer
+```shell
+clang --version
+
+output:
+
+Apple clang version 15.0.0 (clang-1500.1.0.2.5)
+Target: x86_64-apple-darwin23.2.0
+Thread model: posix
+InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+```
+If clang does not exist, run
+```shell
+xcode-select --install
+```
+2. Install 'C/C++' extention for VSCode
+3. Install 'Code Runner' extention
+4. Hit run (right top corner)
+
 ## /* Passing by address */
 ![pass_by_value.png](https://krzysztofbrzozowski.com/media/2024/01/31/pass_by_value.png)
 
