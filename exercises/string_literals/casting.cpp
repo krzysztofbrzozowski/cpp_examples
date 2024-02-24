@@ -30,6 +30,7 @@ int main() {
         1 error generated.
     */
     // print(msg);
+    
+    /* In general that is bad thing to do - overrun might occur */
     print(const_cast<char *>(msg));
-    print(as_const(msg));
 }
