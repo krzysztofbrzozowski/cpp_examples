@@ -35,8 +35,27 @@ void arithmetic_iterator_next_prev(void) {
     cout << "Mid element: " << *mid << endl;
 }
 
+void arithmetic_iterator_distance(void) {
+    string str("Hello");
+
+    cout << "Num of elements: " << distance(str.begin(), str.end()) << endl;
+    /* Instead of begin(str) + 1 */
+    auto second = next(begin(str));
+    cout << "Second char in str: " << *second << endl;
+    
+    /* Instead of begin(str) - 1 */
+    auto last = prev(end(str));
+    cout << "Last char in str: " <<  *last << endl;
+
+    auto mid = begin(str);
+    /* Advance moves an iterator by its second arg */
+    advance(mid, distance(begin(str), end(str)) / 2);
+    cout << "Middle element is: " << *mid << endl;
+}
+
 
 int main() {
     arithmetic_iterator();
     arithmetic_iterator_next_prev();
+    arithmetic_iterator_distance();
 }
